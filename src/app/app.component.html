@@ -1,0 +1,25 @@
+<!-- MASTER PAGE!!!!!
+  The content below is only a placeholder and can be replaced.
+-->
+<div>
+  <h1>{{ title }}!</h1>
+
+  <!-- no longer needed since the app will only display the HeroesComponent when user navigates to it -->
+  <!-- <app-heroes></app-heroes> -->
+
+  <nav>
+    <a [routerLink]="'/dashboard'">Dashboard</a>
+    <br>
+    <a [routerLink]="'/heroes'">Heroes</a>
+    <br>
+    <a [routerLink]="'/herochart'">Hero Chart</a>
+    <br>
+    <a [routerLink]="'/herotime'">Hero Time</a>
+    <br>
+    <a [routerLink]="'/herodriver'">Hero Driver</a>
+  </nav>
+  <!-- for routing purposes -->
+  <router-outlet></router-outlet>
+
+</div>
+
